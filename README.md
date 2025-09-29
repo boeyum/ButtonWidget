@@ -1,6 +1,6 @@
 # Logical button and button-widgets for HOMEY 
 
-###This is a logical button Device for on/off function for use in a HOMEY flow. There ar also different button widgets that has different styling. 
+### This is a logical button Device for on/off function for use in a HOMEY flow. There ar also different button widgets that has different styling. 
 
 If you need Device that is a logical switch for use in Flows and the like, 
 and at the same time can insert it into dashboard widgets with styled buttons, 
