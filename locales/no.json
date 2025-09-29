@@ -1,0 +1,15 @@
+{
+  "pair": {
+    "start": {
+      "deviceName": "Enhetsnavn",
+      "error": "Det har oppstått en feil.",
+      "not_found": "Enheten ble ikke funnet, eller parameteren samsvarer ikke.",
+      "intro": "Dette er et oppsett for button enheten<br/><br/>og teksten på button-widgeten.<br/><br/>Vennligst bruk skjemaknappen for å legge til innstillingene!",
+      "ButtonName": "Button tekst",
+      "required": "Widget button tekst og enhetsnavn er en obligatorisk verdi.",
+      "saveSettings": "Lagre innstillinger",
+      "nosettings": "Ingen innstillinger angitt!",
+      "title": "Button setup"
+    }
+  }
+}

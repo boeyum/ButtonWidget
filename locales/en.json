@@ -1,0 +1,15 @@
+{
+  "pair": {
+    "start": {
+      "deviceName": "Device name",
+      "error": "An error has occurred.",
+      "not_found": "The device is not found or parameter missmatch.",
+      "intro": "This is a setup for the button device<br/><br/>and the name on the button widget.<br/><br/>Please use form-button to add the settings!",
+      "ButtonName": "Button text",
+      "required": "Widget button text and device name is a required value.",
+      "saveSettings": "Save settings",
+      "nosettings": "No settings set!",
+      "title": "Button setup"
+    }
+  }
+}

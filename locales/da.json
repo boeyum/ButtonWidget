@@ -1,0 +1,15 @@
+{
+  "pair": {
+    "start": {
+      "deviceName": "Enhedsnavn",
+      "error": "Der er opstået en fejl.",
+      "not_found": "Enheden findes ikke eller parameter Missmatch.",
+      "intro": "Dette er en opsætning til knapenheden<br/><br/>og navnet på knappen widget.<br/><br/>Brug venligst formknap til at tilføje indstillingerne!",
+      "ButtonName": "Knaptekst",
+      "required": "Widget -enhedsnavn er en påkrævet værdi.",
+      "saveSettings": "Gem indstillinger",
+      "nosettings": "Ingen indstillinger indstillet!",
+      "title": "Knapopsætning"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pair": {
+    "start": {
+      "deviceName": "Enhetsnamn",
+      "error": "Ett fel har inträffat.",
+      "not_found": "Enheten finns inte eller parameter missMatch.",
+      "intro": "Detta är en inställning för knappen enhet<br/><br/>och namnet på knappen widget.<br/><br/>Använd formulär-knappen för att lägga till inställningarna!",
+      "ButtonName": "Knapptext",
+      "required": "Widgetenhetsnamn är ett obligatoriskt värde.",
+      "saveSettings": "Spara inställningar",
+      "nosettings": "Inga inställningar!",
+      "title": "Knappinställning"
+    }
+  }
+}

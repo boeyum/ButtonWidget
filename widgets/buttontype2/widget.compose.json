@@ -1,0 +1,29 @@
+{
+  "name": {
+    "en": "ButtonType2"
+  },
+  "devices": {
+    "type": "app",
+    "singular": true,
+    "filter": {
+      "class": "button",
+      "capabilities": "onoff"
+    }
+  },
+  "height": 90,
+  "settings": [
+    {
+      "id": "text",
+      "type": "text",
+      "title": {
+        "en": "Button text"
+      }
+    }
+  ],
+  "api": {
+    "apiWidgetPost": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

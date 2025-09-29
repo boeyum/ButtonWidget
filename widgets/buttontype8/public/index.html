@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Example of a custom CSS class. */
+        .custom-image-class {
+            margin: var(--homey-su-3) auto var(--homey-su-5);
+        }
+    </style>
+</head>
+
+<body class="homey-widget">
+    <button id="custom_button" class="button">
+        <div class="inner">
+            <div class="top-white"></div>
+            <span class="text">No text defined</span>
+        </div>
+    </button>
+
+    <script type="text/javascript">
+        async function onHomeyReady(Homey) {
+            Homey.ready();
+
+            for (const [settingId, settingValue] of Object.entries(Homey.getSettings())) {
+                // Do something with the settings...
+                document.getElementById('custom_button').innerHTML = Homey.getSettings().text;
+            }
+            document.getElementById('custom_button').addEventListener('click', () => {
+
+                Homey.api('POST', '/widget_post', {})
+                    .then((result) => {
+                        document.getElementById('message').innerText = String(result);
+                    })
+                    .catch(console.error);
+            });
+        }
+    </script>
+</body>
+</html>
