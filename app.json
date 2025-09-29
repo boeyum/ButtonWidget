@@ -1,0 +1,430 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "no.jib.buttonwidget",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "ButtonWidget"
+  },
+  "description": {
+    "en": "Logical button and Widgets with different styling",
+    "no": "Logisk knapp og widgets med forskjellig styling",
+    "da": "Logisk knap og widgets med forskellig styling",
+    "se": "Logisk knapp och widgets med olika styling"
+  },
+  "brandColor": "#007acc",
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "author": {
+    "name": "Jan-Ivar Bøyum",
+    "email": "jan-ivar@boyum.priv.no"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Button"
+      },
+      "class": "button",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "enter_ip"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/buttondev/assets/images/small.png",
+        "large": "/drivers/buttondev/assets/images/large.png"
+      },
+      "id": "buttondev"
+    }
+  ],
+  "widgets": {
+    "buttontype1": {
+      "name": {
+        "en": "ButtonType1"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 100,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype1"
+    },
+    "buttontype10": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 110,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype10"
+    },
+    "buttontype11": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 110,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype11"
+    },
+    "buttontype12": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 110,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype12"
+    },
+    "buttontype2": {
+      "name": {
+        "en": "ButtonType2"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 90,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype2"
+    },
+    "buttontype3": {
+      "name": {
+        "en": "ButtonType3"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 100,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype3"
+    },
+    "buttontype4": {
+      "name": {
+        "en": "ButtonType4"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 110,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype4"
+    },
+    "buttontype5": {
+      "name": {
+        "en": "ButtonType5"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 100,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype5"
+    },
+    "buttontype6": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 160,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype6"
+    },
+    "buttontype7": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 90,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype7"
+    },
+    "buttontype8": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 100,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype8"
+    },
+    "buttontype9": {
+      "name": {
+        "en": "ButtonType6"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 100,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "buttontype9"
+    }
+  }
+}
