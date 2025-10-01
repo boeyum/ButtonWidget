@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "ButtonType9"
+  },
+  "devices": {
+    "type": "app",
+    "singular": true,
+    "filter": {
+      "class": "button",
+      "capabilities": "onoff"
+    }
+  },
+  "height": 140,
+  "settings": [
+    {
+      "id": "text",
+      "type": "text",
+      "title": {
+        "en": "Button short text"
+      }
+    },
+    {
+      "id": "longtext",
+      "type": "text",
+      "title": {
+        "en": "Button lead long text"
+      }
+    }
+  ],
+  "api": {
+    "apiWidgetPost": {
+      "method": "GET",
+      "path": "/"
+    },
+    "apiWidgetGet": {
+      "method": "POST",
+      "path": "/"
+    }
+  }
+}
