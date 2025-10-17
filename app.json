@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "no.jib.buttonwidget",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "platforms": [
@@ -29,6 +29,11 @@
     "name": "Jan-Ivar Bøyum",
     "email": "jan-ivar@boyum.priv.no"
   },
+  "homepage": "https://boyum.priv.no/buttonwidget/",
+  "bugs": {
+    "url": "https://github.com/boeyum/ButtonWidget/issues"
+  },
+  "source": "https://github.com/boeyum/ButtonWidget",
   "drivers": [
     {
       "name": {
@@ -66,9 +71,43 @@
     }
   ],
   "widgets": {
-    "buttontype1": {
+    "bigfat": {
       "name": {
-        "en": "ButtonType1"
+        "en": "Bigfat button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 200,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "bigfat"
+    },
+    "black": {
+      "name": {
+        "en": "Black button"
       },
       "devices": {
         "type": "app",
@@ -92,13 +131,17 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype1"
+      "id": "black"
     },
-    "buttontype10": {
+    "blurry": {
       "name": {
-        "en": "ButtonType6"
+        "en": "Blurry button"
       },
       "devices": {
         "type": "app",
@@ -108,7 +151,7 @@
           "capabilities": "onoff"
         }
       },
-      "height": 110,
+      "height": 120,
       "settings": [
         {
           "id": "text",
@@ -122,103 +165,17 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
-        }
-      },
-      "id": "buttontype10"
-    },
-    "buttontype11": {
-      "name": {
-        "en": "ButtonType6"
-      },
-      "devices": {
-        "type": "app",
-        "singular": true,
-        "filter": {
-          "class": "button",
-          "capabilities": "onoff"
-        }
-      },
-      "height": 110,
-      "settings": [
-        {
-          "id": "text",
-          "type": "text",
-          "title": {
-            "en": "Button text"
-          }
-        }
-      ],
-      "api": {
-        "apiWidgetPost": {
-          "method": "GET",
+        },
+        "apiWidgetGet": {
+          "method": "POST",
           "path": "/"
         }
       },
-      "id": "buttontype11"
+      "id": "blurry"
     },
-    "buttontype12": {
+    "darkred": {
       "name": {
-        "en": "ButtonType6"
-      },
-      "devices": {
-        "type": "app",
-        "singular": true,
-        "filter": {
-          "class": "button",
-          "capabilities": "onoff"
-        }
-      },
-      "height": 110,
-      "settings": [
-        {
-          "id": "text",
-          "type": "text",
-          "title": {
-            "en": "Button text"
-          }
-        }
-      ],
-      "api": {
-        "apiWidgetPost": {
-          "method": "GET",
-          "path": "/"
-        }
-      },
-      "id": "buttontype12"
-    },
-    "buttontype2": {
-      "name": {
-        "en": "ButtonType2"
-      },
-      "devices": {
-        "type": "app",
-        "singular": true,
-        "filter": {
-          "class": "button",
-          "capabilities": "onoff"
-        }
-      },
-      "height": 90,
-      "settings": [
-        {
-          "id": "text",
-          "type": "text",
-          "title": {
-            "en": "Button text"
-          }
-        }
-      ],
-      "api": {
-        "apiWidgetPost": {
-          "method": "GET",
-          "path": "/"
-        }
-      },
-      "id": "buttontype2"
-    },
-    "buttontype3": {
-      "name": {
-        "en": "ButtonType3"
+        "en": "Dark red button"
       },
       "devices": {
         "type": "app",
@@ -242,13 +199,17 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype3"
+      "id": "darkred"
     },
-    "buttontype4": {
+    "glow": {
       "name": {
-        "en": "ButtonType4"
+        "en": "Glow button"
       },
       "devices": {
         "type": "app",
@@ -272,13 +233,160 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype4"
+      "id": "glow"
     },
-    "buttontype5": {
+    "jelly": {
       "name": {
-        "en": "ButtonType5"
+        "en": "Jelly button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 110,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "jelly"
+    },
+    "key": {
+      "name": {
+        "en": "Keycap button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 140,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button short text"
+          }
+        },
+        {
+          "id": "longtext",
+          "type": "text",
+          "title": {
+            "en": "Button lead long text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "key"
+    },
+    "keycap": {
+      "name": {
+        "en": "Keycap button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "keycap"
+    },
+    "laser": {
+      "name": {
+        "en": "Laser button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 130,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "laser"
+    },
+    "lightgray": {
+      "name": {
+        "en": "Lightgray button"
       },
       "devices": {
         "type": "app",
@@ -302,13 +410,85 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype5"
+      "id": "lightgray"
     },
-    "buttontype6": {
+    "mirror": {
       "name": {
-        "en": "ButtonType6"
+        "en": "Mirror button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 190,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "mirror"
+    },
+    "red": {
+      "name": {
+        "en": "Red button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "title": {
+            "en": "Button text"
+          }
+        }
+      ],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "red"
+    },
+    "ruter": {
+      "name": {
+        "en": "Green diamond butten"
       },
       "devices": {
         "type": "app",
@@ -332,13 +512,17 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype6"
+      "id": "ruter"
     },
-    "buttontype7": {
+    "standard": {
       "name": {
-        "en": "ButtonType6"
+        "en": "Standard button"
       },
       "devices": {
         "type": "app",
@@ -362,13 +546,17 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
         }
       },
-      "id": "buttontype7"
+      "id": "standard"
     },
-    "buttontype8": {
+    "troggleswitch": {
       "name": {
-        "en": "ButtonType6"
+        "en": "Troggle Switch"
       },
       "devices": {
         "type": "app",
@@ -378,7 +566,33 @@
           "capabilities": "onoff"
         }
       },
-      "height": 100,
+      "height": 200,
+      "settings": [],
+      "api": {
+        "apiWidgetPost": {
+          "method": "GET",
+          "path": "/"
+        },
+        "apiWidgetGet": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "troggleswitch"
+    },
+    "winter": {
+      "name": {
+        "en": "Winter button"
+      },
+      "devices": {
+        "type": "app",
+        "singular": true,
+        "filter": {
+          "class": "button",
+          "capabilities": "onoff"
+        }
+      },
+      "height": 120,
       "settings": [
         {
           "id": "text",
@@ -392,39 +606,13 @@
         "apiWidgetPost": {
           "method": "GET",
           "path": "/"
-        }
-      },
-      "id": "buttontype8"
-    },
-    "buttontype9": {
-      "name": {
-        "en": "ButtonType6"
-      },
-      "devices": {
-        "type": "app",
-        "singular": true,
-        "filter": {
-          "class": "button",
-          "capabilities": "onoff"
-        }
-      },
-      "height": 100,
-      "settings": [
-        {
-          "id": "text",
-          "type": "text",
-          "title": {
-            "en": "Button text"
-          }
-        }
-      ],
-      "api": {
-        "apiWidgetPost": {
-          "method": "GET",
+        },
+        "apiWidgetGet": {
+          "method": "POST",
           "path": "/"
         }
       },
-      "id": "buttontype9"
+      "id": "winter"
     }
   }
 }
