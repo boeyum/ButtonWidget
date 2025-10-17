@@ -1,0 +1,25 @@
+{
+  "name": {
+    "en": "Troggle Switch"
+  },
+  "devices": {
+    "type": "app",
+    "singular": true,
+    "filter": {
+      "class": "button",
+      "capabilities": "onoff"
+    }
+  },
+  "height": 200,
+  "settings": [],
+  "api": {
+    "apiWidgetPost": {
+      "method": "GET",
+      "path": "/"
+    },
+    "apiWidgetGet": {
+      "method": "POST",
+      "path": "/"
+    }
+  }
+}

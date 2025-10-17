@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="color.css">
+    <style>
+        /* Example of a custom CSS class. */
+        .custom-image-class {
+            margin: var(--homey-su-3) auto var(--homey-su-5);
+        }
+    </style>
+</head>
+
+<body class="homey-widget">
+    <center>
+        <table>
+            <tr>
+                <td allign="center" width="60"><div id="statuslight" class="led-light"></div></td>
+                <td allign="center" width="200"><button id="custom_button" class="delete-button">No text defined</button></td>
+            </tr>
+        </table>
+    </center>
+
+    <script type="text/javascript">
+
+        async function onHomeyReady(Homey) {
+            Homey.ready();
+            const $selectedDeviceId = Homey.getDeviceIds()[0];
+
+            for (const [settingId, settingValue] of Object.entries(Homey.getSettings())) {
+                // Do something with the settings...
+                document.getElementById('custom_button').innerHTML = Homey.getSettings().text;
+            }
+            Homey.api('POST', `/?deviceId=${$selectedDeviceId}`, {})
+                .then((result) => {
+                    if (result) {
+                        document.getElementById('statuslight').style.backgroundColor = "green";
+                    } else {
+                        document.getElementById('statuslight').style.backgroundColor = "red";
+                    }
+                })
+                .catch(console.error);
+
+            document.getElementById('custom_button').addEventListener('click', () => {
+
+                Homey.api('GET', `/?deviceId=${$selectedDeviceId}`, {})
+                    .then((result) => {
+                        if (result) {
+                            document.getElementById('statuslight').style.backgroundColor = "green";
+                        } else {
+                            document.getElementById('statuslight').style.backgroundColor = "red";
+                        }
+                    })
+                    .catch(console.error);
+            });
+        }
+    </script>
+</body>
+</html>

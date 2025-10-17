@@ -1,0 +1,18 @@
+.button {
+  cursor: pointer;
+  font-size: large;
+  font-family: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #8c1906;
+  padding: 0.8em 0.8em;
+  border-radius: 20px;
+  border: 8px ridge #b84c3d;
+  box-shadow: 0px 8px #856661;
+}
+.button:active {
+  position: relative;
+  top: 8px;
+  border: 8px solid #ff4324;
+  box-shadow: 0px 0px;
+}

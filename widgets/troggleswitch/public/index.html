@@ -1,0 +1,69 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Example of a custom CSS class. */
+        .custom-image-class {
+            margin: var(--homey-su-3) auto var(--homey-su-5);
+        }
+    </style>
+</head>
+
+<body class="homey-widget">
+    <center>
+        <table>
+            <tr>
+                <td allign="center" width="200">
+                    <input name="switch" id="switch" type="checkbox">
+                    <label class="switch" for="switch"></label>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script type="text/javascript">
+
+        async function onHomeyReady(Homey) {
+            Homey.ready();
+            const $selectedDeviceId = Homey.getDeviceIds()[0];
+
+            Homey.api('POST', `/?deviceId=${$selectedDeviceId}`, {})
+                .then((result) => {
+                    if (result) {
+                        document.getElementById('switch').checked = true;
+                    } else {
+                        document.getElementById('switch').checked = false;
+                    }
+                })
+                .catch(console.error);
+
+            var checkbox = document.querySelector("input[name=switch]");
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    console.log("Checkbox is checked..");
+                    Homey.api('GET', `/?deviceId=${$selectedDeviceId}&checked=yes`, {})
+                        .then((result) => {
+                            if (result) {
+                                document.getElementById('switch').checked = true;
+                            } else {
+                                document.getElementById('switch').checked = false;
+                            }
+                        })
+                        .catch(console.error);
+                } else {
+                    console.log("Checkbox is not checked..");
+                    Homey.api('GET', `/?deviceId=${$selectedDeviceId}&checked=no`, {})
+                        .then((result) => {
+                            if (result) {
+                                document.getElementById('switch').checked = true;
+                            } else {
+                                document.getElementById('switch').checked = false;
+                            }
+                        })
+                        .catch(console.error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
